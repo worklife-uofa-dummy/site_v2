@@ -10,7 +10,7 @@
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: #fffae2; /* Black */
+    background-color: #e9c616; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
     font-size: 1.5em;   
 }
@@ -23,8 +23,11 @@
   }
 
 .headerbar {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(95, 14, 14);
     text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items:center;
     z-index: 1;
     top: 0;
     overflow: hidden;
