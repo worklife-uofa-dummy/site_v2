@@ -1,0 +1,28 @@
+<div class="carousel">
+    {% for person in site.people %}
+      <div class="carousel-item">
+        <img src="{{ person.img }}" >
+      </div>
+    {% endfor %}
+  </div>
+  
+  <style>
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch; /* Enables smooth scrolling on iOS */
+    }
+  
+    .carousel-item {
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+    }
+  
+    img {
+      max-width: 50%;
+      height: auto;
+      display: block;
+    }
+  </style>
+  

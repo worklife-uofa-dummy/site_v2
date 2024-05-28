@@ -3,16 +3,22 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
     <title>{{ page.title }} - {{ site.title }}</title>
     <link rel="stylesheet" href="/assets/css/main.css">
-
+    <style>
+      body {
+          font-family: 'Abel';font-size: 14px;
+      }
+      </style>
   </head>
 
   <body>
     {% include sidebar.html %}
     {% include headerbar.html %}
     <div class = "maincontent">
-    {{ content }}
+      {% include photo_carousel.html %}
+      {{ content }}
     </div>
   </body>
 </html>
